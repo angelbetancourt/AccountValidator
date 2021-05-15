@@ -1,14 +1,14 @@
 //
-//  Account_ValidatorTests.swift
-//  Account ValidatorTests
+//  Keychain_StorageTests.swift
+//  Keychain StorageTests
 //
-//  Created by Angel Betancourt on 14/05/21.
+//  Created by Angel Betancourt on 15/05/21.
 //
 
 import XCTest
-@testable import Account_Validator
+@testable import Keychain_Storage
 
-class Account_ValidatorTests: XCTestCase {
+class Keychain_StorageTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

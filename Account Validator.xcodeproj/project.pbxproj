@@ -9,12 +9,52 @@
 /* Begin PBXBuildFile section */
 		676791CB264F146F00AA24E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791CA264F146F00AA24E4 /* AppDelegate.swift */; };
 		676791CD264F146F00AA24E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791CC264F146F00AA24E4 /* SceneDelegate.swift */; };
-		676791CF264F146F00AA24E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791CE264F146F00AA24E4 /* ViewController.swift */; };
+		676791CF264F146F00AA24E4 /* ValidateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791CE264F146F00AA24E4 /* ValidateAccountViewController.swift */; };
 		676791D2264F146F00AA24E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676791D0264F146F00AA24E4 /* Main.storyboard */; };
 		676791D4264F147400AA24E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676791D3264F147400AA24E4 /* Assets.xcassets */; };
 		676791D7264F147400AA24E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676791D5264F147400AA24E4 /* LaunchScreen.storyboard */; };
-		676791E2264F147500AA24E4 /* Account_ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791E1264F147500AA24E4 /* Account_ValidatorTests.swift */; };
-		676791ED264F147500AA24E4 /* Account_ValidatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676791EC264F147500AA24E4 /* Account_ValidatorUITests.swift */; };
+		67679203264F1A3C00AA24E4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67679202264F1A3C00AA24E4 /* Account.swift */; };
+		6767920D264F1A8700AA24E4 /* ValidateAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6767920C264F1A8700AA24E4 /* ValidateAccountPresenter.swift */; };
+		67679216264F1BF600AA24E4 /* GetCurrentDateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67679215264F1BF600AA24E4 /* GetCurrentDateService.swift */; };
+		6767921F264F1C7200AA24E4 /* GetCurrentDateGeoNamesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6767921E264F1C7200AA24E4 /* GetCurrentDateGeoNamesService.swift */; };
+		6767922C264F286300AA24E4 /* GeoNameTimezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6767922B264F286300AA24E4 /* GeoNameTimezone.swift */; };
+		67B90F3126501FB80015D4A2 /* ValidateAccountImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F3026501FB80015D4A2 /* ValidateAccountImplTests.swift */; };
+		67B90F3A265022080015D4A2 /* AccountValidationStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F39265022080015D4A2 /* AccountValidationStorageMock.swift */; };
+		67B90F42265022200015D4A2 /* AccountStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F41265022200015D4A2 /* AccountStorageMock.swift */; };
+		67B90F4A265022430015D4A2 /* GetCurrentLocationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F49265022430015D4A2 /* GetCurrentLocationServiceMock.swift */; };
+		67B90F4F2650224D0015D4A2 /* GetCurrentDateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F4E2650224D0015D4A2 /* GetCurrentDateServiceMock.swift */; };
+		67B90F542650337C0015D4A2 /* CreateAccountImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F532650337C0015D4A2 /* CreateAccountImplTests.swift */; };
+		67B90F592650399B0015D4A2 /* ValidateAccountPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F582650399B0015D4A2 /* ValidateAccountPresenterTests.swift */; };
+		67B90F5E265039EE0015D4A2 /* CreateAccountMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F5D265039EE0015D4A2 /* CreateAccountMock.swift */; };
+		67B90F63265039F90015D4A2 /* ValidateAccountMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F62265039F90015D4A2 /* ValidateAccountMock.swift */; };
+		67B90F6826503AF10015D4A2 /* ValidateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F6726503AF10015D4A2 /* ValidateAccountViewModel.swift */; };
+		67B90F71265042F00015D4A2 /* ValidateAccountViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B90F6C265042E10015D4A2 /* ValidateAccountViewSpy.swift */; };
+		67C689A0264F34EC00134BBA /* ValidateAccountPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C6899F264F34EC00134BBA /* ValidateAccountPresenterBuilder.swift */; };
+		67C689AB264F382200134BBA /* GetCurrentLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689AA264F382200134BBA /* GetCurrentLocationService.swift */; };
+		67C689B0264F389900134BBA /* GetCurrentLocationCoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689AF264F389900134BBA /* GetCurrentLocationCoreLocationService.swift */; };
+		67C689B5264F3DD400134BBA /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689B4264F3DD400134BBA /* DeviceLocation.swift */; };
+		67C689BA264F574400134BBA /* AccountStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689B9264F574400134BBA /* AccountStorage.swift */; };
+		67C689C6264F5A8D00134BBA /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689C5264F5A8D00134BBA /* CreateAccount.swift */; };
+		67C689CE264F5A9C00134BBA /* IsPasswordValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689CD264F5A9C00134BBA /* IsPasswordValid.swift */; };
+		67C689D3264F676700134BBA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689D2264F676700134BBA /* ViewModel.swift */; };
+		67C689DF264F67DA00134BBA /* CreateAccountImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689DE264F67DA00134BBA /* CreateAccountImpl.swift */; };
+		67C689E5264F67FA00134BBA /* ValidateAccountImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689E4264F67FA00134BBA /* ValidateAccountImpl.swift */; };
+		67C689EA264F681600134BBA /* ValidateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689E9264F681600134BBA /* ValidateAccount.swift */; };
+		67C689F22650082000134BBA /* AccountValidationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689F12650082000134BBA /* AccountValidationStorage.swift */; };
+		67C689F72650083500134BBA /* InMemoryAccountValidationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C689F62650083500134BBA /* InMemoryAccountValidationStorage.swift */; };
+		67C68A6426500A8A00134BBA /* Keychain_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */; };
+		67C68A6B26500A8A00134BBA /* Keychain_StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68A6A26500A8A00134BBA /* Keychain_StorageTests.swift */; };
+		67C68A6D26500A8A00134BBA /* Keychain_Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C68A5D26500A8A00134BBA /* Keychain_Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67C68A7026500A8A00134BBA /* Keychain_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */; };
+		67C68A7126500A8A00134BBA /* Keychain_Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67C68A8126500B0E00134BBA /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68A8026500B0E00134BBA /* KeychainStorage.swift */; };
+		67C68A8626500BB200134BBA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68A8526500BB200134BBA /* Account.swift */; };
+		67C68A9426500F3000134BBA /* KeyChainAccountStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68A9326500F3000134BBA /* KeyChainAccountStorage.swift */; };
+		67C68AA4265013C500134BBA /* ValidationAttemptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68AA3265013C500134BBA /* ValidationAttemptsViewController.swift */; };
+		67C68AAF2650144E00134BBA /* ValidateAccountPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68AAE2650144E00134BBA /* ValidateAccountPresenterProtocol.swift */; };
+		67C68AB42650148200134BBA /* ValidationAttemptsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68AB32650148200134BBA /* ValidationAttemptsPresenter.swift */; };
+		67C68AB92650148C00134BBA /* ValidationAttemptsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68AB82650148C00134BBA /* ValidationAttemptsPresenterProtocol.swift */; };
+		67C68ABE265014CE00134BBA /* ValidationAttemptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C68ABD265014CE00134BBA /* ValidationAttemptViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,30 +65,99 @@
 			remoteGlobalIDString = 676791C6264F146F00AA24E4;
 			remoteInfo = "Account Validator";
 		};
-		676791E9264F147500AA24E4 /* PBXContainerItemProxy */ = {
+		67C68A6526500A8A00134BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676791BF264F146F00AA24E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C68A5A26500A8A00134BBA;
+			remoteInfo = "Keychain Storage";
+		};
+		67C68A6726500A8A00134BBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 676791BF264F146F00AA24E4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 676791C6264F146F00AA24E4;
 			remoteInfo = "Account Validator";
 		};
+		67C68A6E26500A8A00134BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676791BF264F146F00AA24E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C68A5A26500A8A00134BBA;
+			remoteInfo = "Keychain Storage";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67C68A7526500A8A00134BBA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67C68A7126500A8A00134BBA /* Keychain_Storage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		676791C7264F146F00AA24E4 /* Account Validator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Account Validator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676791CA264F146F00AA24E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		676791CC264F146F00AA24E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		676791CE264F146F00AA24E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		676791CE264F146F00AA24E4 /* ValidateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountViewController.swift; sourceTree = "<group>"; };
 		676791D1264F146F00AA24E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		676791D3264F147400AA24E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676791D6264F147400AA24E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		676791D8264F147400AA24E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676791DD264F147500AA24E4 /* Account ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Account ValidatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		676791E1264F147500AA24E4 /* Account_ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account_ValidatorTests.swift; sourceTree = "<group>"; };
 		676791E3264F147500AA24E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		676791E8264F147500AA24E4 /* Account ValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Account ValidatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676791EC264F147500AA24E4 /* Account_ValidatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account_ValidatorUITests.swift; sourceTree = "<group>"; };
 		676791EE264F147500AA24E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67679202264F1A3C00AA24E4 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		6767920C264F1A8700AA24E4 /* ValidateAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountPresenter.swift; sourceTree = "<group>"; };
+		67679215264F1BF600AA24E4 /* GetCurrentDateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentDateService.swift; sourceTree = "<group>"; };
+		6767921E264F1C7200AA24E4 /* GetCurrentDateGeoNamesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentDateGeoNamesService.swift; sourceTree = "<group>"; };
+		6767922B264F286300AA24E4 /* GeoNameTimezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoNameTimezone.swift; sourceTree = "<group>"; };
+		67B90F3026501FB80015D4A2 /* ValidateAccountImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountImplTests.swift; sourceTree = "<group>"; };
+		67B90F39265022080015D4A2 /* AccountValidationStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidationStorageMock.swift; sourceTree = "<group>"; };
+		67B90F41265022200015D4A2 /* AccountStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStorageMock.swift; sourceTree = "<group>"; };
+		67B90F49265022430015D4A2 /* GetCurrentLocationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationServiceMock.swift; sourceTree = "<group>"; };
+		67B90F4E2650224D0015D4A2 /* GetCurrentDateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentDateServiceMock.swift; sourceTree = "<group>"; };
+		67B90F532650337C0015D4A2 /* CreateAccountImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountImplTests.swift; sourceTree = "<group>"; };
+		67B90F582650399B0015D4A2 /* ValidateAccountPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountPresenterTests.swift; sourceTree = "<group>"; };
+		67B90F5D265039EE0015D4A2 /* CreateAccountMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountMock.swift; sourceTree = "<group>"; };
+		67B90F62265039F90015D4A2 /* ValidateAccountMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountMock.swift; sourceTree = "<group>"; };
+		67B90F6726503AF10015D4A2 /* ValidateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountViewModel.swift; sourceTree = "<group>"; };
+		67B90F6C265042E10015D4A2 /* ValidateAccountViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountViewSpy.swift; sourceTree = "<group>"; };
+		67C6899F264F34EC00134BBA /* ValidateAccountPresenterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountPresenterBuilder.swift; sourceTree = "<group>"; };
+		67C689AA264F382200134BBA /* GetCurrentLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationService.swift; sourceTree = "<group>"; };
+		67C689AF264F389900134BBA /* GetCurrentLocationCoreLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationCoreLocationService.swift; sourceTree = "<group>"; };
+		67C689B4264F3DD400134BBA /* DeviceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocation.swift; sourceTree = "<group>"; };
+		67C689B9264F574400134BBA /* AccountStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStorage.swift; sourceTree = "<group>"; };
+		67C689C5264F5A8D00134BBA /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		67C689CD264F5A9C00134BBA /* IsPasswordValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPasswordValid.swift; sourceTree = "<group>"; };
+		67C689D2264F676700134BBA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		67C689DE264F67DA00134BBA /* CreateAccountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountImpl.swift; sourceTree = "<group>"; };
+		67C689E4264F67FA00134BBA /* ValidateAccountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountImpl.swift; sourceTree = "<group>"; };
+		67C689E9264F681600134BBA /* ValidateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccount.swift; sourceTree = "<group>"; };
+		67C689F12650082000134BBA /* AccountValidationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountValidationStorage.swift; sourceTree = "<group>"; };
+		67C689F62650083500134BBA /* InMemoryAccountValidationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryAccountValidationStorage.swift; sourceTree = "<group>"; };
+		67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Keychain_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C68A5D26500A8A00134BBA /* Keychain_Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keychain_Storage.h; sourceTree = "<group>"; };
+		67C68A5E26500A8A00134BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C68A6326500A8A00134BBA /* Keychain StorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keychain StorageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C68A6A26500A8A00134BBA /* Keychain_StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain_StorageTests.swift; sourceTree = "<group>"; };
+		67C68A6C26500A8A00134BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C68A8026500B0E00134BBA /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		67C68A8526500BB200134BBA /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		67C68A9326500F3000134BBA /* KeyChainAccountStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainAccountStorage.swift; sourceTree = "<group>"; };
+		67C68AA3265013C500134BBA /* ValidationAttemptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAttemptsViewController.swift; sourceTree = "<group>"; };
+		67C68AAE2650144E00134BBA /* ValidateAccountPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateAccountPresenterProtocol.swift; sourceTree = "<group>"; };
+		67C68AB32650148200134BBA /* ValidationAttemptsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAttemptsPresenter.swift; sourceTree = "<group>"; };
+		67C68AB82650148C00134BBA /* ValidationAttemptsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAttemptsPresenterProtocol.swift; sourceTree = "<group>"; };
+		67C68ABD265014CE00134BBA /* ValidationAttemptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAttemptViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C68A7026500A8A00134BBA /* Keychain_Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +176,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		676791E5264F147500AA24E4 /* Frameworks */ = {
+		67C68A5826500A8A00134BBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C68A6026500A8A00134BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C68A6426500A8A00134BBA /* Keychain_Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +200,8 @@
 				676791C9264F146F00AA24E4 /* Account Validator */,
 				676791E0264F147500AA24E4 /* Account ValidatorTests */,
 				676791EB264F147500AA24E4 /* Account ValidatorUITests */,
+				67C68A5C26500A8A00134BBA /* Keychain Storage */,
+				67C68A6926500A8A00134BBA /* Keychain StorageTests */,
 				676791C8264F146F00AA24E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +211,8 @@
 			children = (
 				676791C7264F146F00AA24E4 /* Account Validator.app */,
 				676791DD264F147500AA24E4 /* Account ValidatorTests.xctest */,
-				676791E8264F147500AA24E4 /* Account ValidatorUITests.xctest */,
+				67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */,
+				67C68A6326500A8A00134BBA /* Keychain StorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +220,13 @@
 		676791C9264F146F00AA24E4 /* Account Validator */ = {
 			isa = PBXGroup;
 			children = (
-				676791CA264F146F00AA24E4 /* AppDelegate.swift */,
-				676791CC264F146F00AA24E4 /* SceneDelegate.swift */,
-				676791CE264F146F00AA24E4 /* ViewController.swift */,
-				676791D0264F146F00AA24E4 /* Main.storyboard */,
+				67C689C4264F5A6100134BBA /* UseCases */,
+				67C6899E264F34DD00134BBA /* Main */,
+				67679214264F1BCF00AA24E4 /* Services */,
+				6767920B264F1A5800AA24E4 /* View */,
+				6767920A264F1A5100AA24E4 /* Presentation */,
+				67679200264F1A2100AA24E4 /* Entities */,
 				676791D3264F147400AA24E4 /* Assets.xcassets */,
-				676791D5264F147400AA24E4 /* LaunchScreen.storyboard */,
 				676791D8264F147400AA24E4 /* Info.plist */,
 			);
 			path = "Account Validator";
@@ -113,7 +235,9 @@
 		676791E0264F147500AA24E4 /* Account ValidatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				676791E1264F147500AA24E4 /* Account_ValidatorTests.swift */,
+				67B90F38265021FE0015D4A2 /* Mocks */,
+				67B90F2F26501F890015D4A2 /* UseCases */,
+				67B90F2C26501F6B0015D4A2 /* Persentation */,
 				676791E3264F147500AA24E4 /* Info.plist */,
 			);
 			path = "Account ValidatorTests";
@@ -128,7 +252,245 @@
 			path = "Account ValidatorUITests";
 			sourceTree = "<group>";
 		};
+		67679200264F1A2100AA24E4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				67679202264F1A3C00AA24E4 /* Account.swift */,
+				67C689B4264F3DD400134BBA /* DeviceLocation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6767920A264F1A5100AA24E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				67C68AAA2650143500134BBA /* ValidationAttempts */,
+				67C68AA92650142A00134BBA /* Alert */,
+				67C68AA82650141D00134BBA /* ValidateAccount */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6767920B264F1A5800AA24E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67C68AA2265013A600134BBA /* ValidationAttempts */,
+				67C68AA12650139300134BBA /* ValidateAccount */,
+				676791D5264F147400AA24E4 /* LaunchScreen.storyboard */,
+				676791D0264F146F00AA24E4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67679214264F1BCF00AA24E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6767921D264F1C6500AA24E4 /* Implementation */,
+				67679215264F1BF600AA24E4 /* GetCurrentDateService.swift */,
+				67C689AA264F382200134BBA /* GetCurrentLocationService.swift */,
+				67C689B9264F574400134BBA /* AccountStorage.swift */,
+				67C689F12650082000134BBA /* AccountValidationStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6767921D264F1C6500AA24E4 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				67C68A98265010CE00134BBA /* GeoNamesAPIImplementation */,
+				67C68A99265010F100134BBA /* CoreLocationImplementation */,
+				67C68A9A2650110400134BBA /* KechainStorageImplementation */,
+				67C689F62650083500134BBA /* InMemoryAccountValidationStorage.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		67B90F2C26501F6B0015D4A2 /* Persentation */ = {
+			isa = PBXGroup;
+			children = (
+				67B90F2E26501F800015D4A2 /* ValidateAccount */,
+				67B90F2D26501F770015D4A2 /* ValidationAttempts */,
+			);
+			path = Persentation;
+			sourceTree = "<group>";
+		};
+		67B90F2D26501F770015D4A2 /* ValidationAttempts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ValidationAttempts;
+			sourceTree = "<group>";
+		};
+		67B90F2E26501F800015D4A2 /* ValidateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				67B90F6C265042E10015D4A2 /* ValidateAccountViewSpy.swift */,
+				67B90F582650399B0015D4A2 /* ValidateAccountPresenterTests.swift */,
+			);
+			path = ValidateAccount;
+			sourceTree = "<group>";
+		};
+		67B90F2F26501F890015D4A2 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				67B90F3026501FB80015D4A2 /* ValidateAccountImplTests.swift */,
+				67B90F532650337C0015D4A2 /* CreateAccountImplTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		67B90F38265021FE0015D4A2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				67B90F39265022080015D4A2 /* AccountValidationStorageMock.swift */,
+				67B90F4E2650224D0015D4A2 /* GetCurrentDateServiceMock.swift */,
+				67B90F41265022200015D4A2 /* AccountStorageMock.swift */,
+				67B90F49265022430015D4A2 /* GetCurrentLocationServiceMock.swift */,
+				67B90F5D265039EE0015D4A2 /* CreateAccountMock.swift */,
+				67B90F62265039F90015D4A2 /* ValidateAccountMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		67C6899E264F34DD00134BBA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				676791CA264F146F00AA24E4 /* AppDelegate.swift */,
+				676791CC264F146F00AA24E4 /* SceneDelegate.swift */,
+				67C6899F264F34EC00134BBA /* ValidateAccountPresenterBuilder.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		67C689C4264F5A6100134BBA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				67C689E3264F67E900134BBA /* ValidateAccount */,
+				67C689DA264F67BA00134BBA /* CreateAccount */,
+				67C689CD264F5A9C00134BBA /* IsPasswordValid.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		67C689DA264F67BA00134BBA /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				67C689C5264F5A8D00134BBA /* CreateAccount.swift */,
+				67C689DE264F67DA00134BBA /* CreateAccountImpl.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		67C689E3264F67E900134BBA /* ValidateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				67C689E4264F67FA00134BBA /* ValidateAccountImpl.swift */,
+				67C689E9264F681600134BBA /* ValidateAccount.swift */,
+			);
+			path = ValidateAccount;
+			sourceTree = "<group>";
+		};
+		67C68A5C26500A8A00134BBA /* Keychain Storage */ = {
+			isa = PBXGroup;
+			children = (
+				67C68A5D26500A8A00134BBA /* Keychain_Storage.h */,
+				67C68A5E26500A8A00134BBA /* Info.plist */,
+				67C68A8026500B0E00134BBA /* KeychainStorage.swift */,
+				67C68A8526500BB200134BBA /* Account.swift */,
+			);
+			path = "Keychain Storage";
+			sourceTree = "<group>";
+		};
+		67C68A6926500A8A00134BBA /* Keychain StorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				67C68A6A26500A8A00134BBA /* Keychain_StorageTests.swift */,
+				67C68A6C26500A8A00134BBA /* Info.plist */,
+			);
+			path = "Keychain StorageTests";
+			sourceTree = "<group>";
+		};
+		67C68A98265010CE00134BBA /* GeoNamesAPIImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				6767921E264F1C7200AA24E4 /* GetCurrentDateGeoNamesService.swift */,
+				6767922B264F286300AA24E4 /* GeoNameTimezone.swift */,
+			);
+			path = GeoNamesAPIImplementation;
+			sourceTree = "<group>";
+		};
+		67C68A99265010F100134BBA /* CoreLocationImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				67C689AF264F389900134BBA /* GetCurrentLocationCoreLocationService.swift */,
+			);
+			path = CoreLocationImplementation;
+			sourceTree = "<group>";
+		};
+		67C68A9A2650110400134BBA /* KechainStorageImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				67C68A9326500F3000134BBA /* KeyChainAccountStorage.swift */,
+			);
+			path = KechainStorageImplementation;
+			sourceTree = "<group>";
+		};
+		67C68AA12650139300134BBA /* ValidateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				676791CE264F146F00AA24E4 /* ValidateAccountViewController.swift */,
+			);
+			path = ValidateAccount;
+			sourceTree = "<group>";
+		};
+		67C68AA2265013A600134BBA /* ValidationAttempts */ = {
+			isa = PBXGroup;
+			children = (
+				67C68AA3265013C500134BBA /* ValidationAttemptsViewController.swift */,
+			);
+			path = ValidationAttempts;
+			sourceTree = "<group>";
+		};
+		67C68AA82650141D00134BBA /* ValidateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				6767920C264F1A8700AA24E4 /* ValidateAccountPresenter.swift */,
+				67C68AAE2650144E00134BBA /* ValidateAccountPresenterProtocol.swift */,
+				67B90F6726503AF10015D4A2 /* ValidateAccountViewModel.swift */,
+			);
+			path = ValidateAccount;
+			sourceTree = "<group>";
+		};
+		67C68AA92650142A00134BBA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				67C689D2264F676700134BBA /* ViewModel.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		67C68AAA2650143500134BBA /* ValidationAttempts */ = {
+			isa = PBXGroup;
+			children = (
+				67C68AB32650148200134BBA /* ValidationAttemptsPresenter.swift */,
+				67C68AB82650148C00134BBA /* ValidationAttemptsPresenterProtocol.swift */,
+				67C68ABD265014CE00134BBA /* ValidationAttemptViewModel.swift */,
+			);
+			path = ValidationAttempts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		67C68A5626500A8A00134BBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C68A6D26500A8A00134BBA /* Keychain_Storage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		676791C6264F146F00AA24E4 /* Account Validator */ = {
@@ -138,10 +500,12 @@
 				676791C3264F146F00AA24E4 /* Sources */,
 				676791C4264F146F00AA24E4 /* Frameworks */,
 				676791C5264F146F00AA24E4 /* Resources */,
+				67C68A7526500A8A00134BBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67C68A6F26500A8A00134BBA /* PBXTargetDependency */,
 			);
 			name = "Account Validator";
 			productName = "Account Validator";
@@ -166,23 +530,42 @@
 			productReference = 676791DD264F147500AA24E4 /* Account ValidatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		676791E7264F147500AA24E4 /* Account ValidatorUITests */ = {
+		67C68A5A26500A8A00134BBA /* Keychain Storage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 676791F7264F147500AA24E4 /* Build configuration list for PBXNativeTarget "Account ValidatorUITests" */;
+			buildConfigurationList = 67C68A7226500A8A00134BBA /* Build configuration list for PBXNativeTarget "Keychain Storage" */;
 			buildPhases = (
-				676791E4264F147500AA24E4 /* Sources */,
-				676791E5264F147500AA24E4 /* Frameworks */,
-				676791E6264F147500AA24E4 /* Resources */,
+				67C68A5626500A8A00134BBA /* Headers */,
+				67C68A5726500A8A00134BBA /* Sources */,
+				67C68A5826500A8A00134BBA /* Frameworks */,
+				67C68A5926500A8A00134BBA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				676791EA264F147500AA24E4 /* PBXTargetDependency */,
 			);
-			name = "Account ValidatorUITests";
-			productName = "Account ValidatorUITests";
-			productReference = 676791E8264F147500AA24E4 /* Account ValidatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = "Keychain Storage";
+			productName = "Keychain Storage";
+			productReference = 67C68A5B26500A8A00134BBA /* Keychain_Storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67C68A6226500A8A00134BBA /* Keychain StorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C68A7626500A8A00134BBA /* Build configuration list for PBXNativeTarget "Keychain StorageTests" */;
+			buildPhases = (
+				67C68A5F26500A8A00134BBA /* Sources */,
+				67C68A6026500A8A00134BBA /* Frameworks */,
+				67C68A6126500A8A00134BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C68A6626500A8A00134BBA /* PBXTargetDependency */,
+				67C68A6826500A8A00134BBA /* PBXTargetDependency */,
+			);
+			name = "Keychain StorageTests";
+			productName = "Keychain StorageTests";
+			productReference = 67C68A6326500A8A00134BBA /* Keychain StorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,7 +583,11 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 676791C6264F146F00AA24E4;
 					};
-					676791E7264F147500AA24E4 = {
+					67C68A5A26500A8A00134BBA = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					67C68A6226500A8A00134BBA = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 676791C6264F146F00AA24E4;
 					};
@@ -221,7 +608,8 @@
 			targets = (
 				676791C6264F146F00AA24E4 /* Account Validator */,
 				676791DC264F147500AA24E4 /* Account ValidatorTests */,
-				676791E7264F147500AA24E4 /* Account ValidatorUITests */,
+				67C68A5A26500A8A00134BBA /* Keychain Storage */,
+				67C68A6226500A8A00134BBA /* Keychain StorageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,7 +632,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		676791E6264F147500AA24E4 /* Resources */ = {
+		67C68A5926500A8A00134BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C68A6126500A8A00134BBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +653,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676791CF264F146F00AA24E4 /* ViewController.swift in Sources */,
+				67C68ABE265014CE00134BBA /* ValidationAttemptViewModel.swift in Sources */,
+				67C689DF264F67DA00134BBA /* CreateAccountImpl.swift in Sources */,
+				676791CF264F146F00AA24E4 /* ValidateAccountViewController.swift in Sources */,
+				67679203264F1A3C00AA24E4 /* Account.swift in Sources */,
+				67C689B0264F389900134BBA /* GetCurrentLocationCoreLocationService.swift in Sources */,
+				6767921F264F1C7200AA24E4 /* GetCurrentDateGeoNamesService.swift in Sources */,
+				67C689B5264F3DD400134BBA /* DeviceLocation.swift in Sources */,
+				67C689F22650082000134BBA /* AccountValidationStorage.swift in Sources */,
+				67C689A0264F34EC00134BBA /* ValidateAccountPresenterBuilder.swift in Sources */,
+				67C689E5264F67FA00134BBA /* ValidateAccountImpl.swift in Sources */,
+				67C68AA4265013C500134BBA /* ValidationAttemptsViewController.swift in Sources */,
+				67C68AAF2650144E00134BBA /* ValidateAccountPresenterProtocol.swift in Sources */,
+				67C68A9426500F3000134BBA /* KeyChainAccountStorage.swift in Sources */,
+				67C689D3264F676700134BBA /* ViewModel.swift in Sources */,
+				67679216264F1BF600AA24E4 /* GetCurrentDateService.swift in Sources */,
 				676791CB264F146F00AA24E4 /* AppDelegate.swift in Sources */,
+				67C68AB42650148200134BBA /* ValidationAttemptsPresenter.swift in Sources */,
+				67C689EA264F681600134BBA /* ValidateAccount.swift in Sources */,
+				6767922C264F286300AA24E4 /* GeoNameTimezone.swift in Sources */,
+				67C689F72650083500134BBA /* InMemoryAccountValidationStorage.swift in Sources */,
+				67C689AB264F382200134BBA /* GetCurrentLocationService.swift in Sources */,
+				67C689C6264F5A8D00134BBA /* CreateAccount.swift in Sources */,
+				67C689BA264F574400134BBA /* AccountStorage.swift in Sources */,
+				67C689CE264F5A9C00134BBA /* IsPasswordValid.swift in Sources */,
+				67B90F6826503AF10015D4A2 /* ValidateAccountViewModel.swift in Sources */,
 				676791CD264F146F00AA24E4 /* SceneDelegate.swift in Sources */,
+				6767920D264F1A8700AA24E4 /* ValidateAccountPresenter.swift in Sources */,
+				67C68AB92650148C00134BBA /* ValidationAttemptsPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +688,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676791E2264F147500AA24E4 /* Account_ValidatorTests.swift in Sources */,
+				67B90F3A265022080015D4A2 /* AccountValidationStorageMock.swift in Sources */,
+				67B90F592650399B0015D4A2 /* ValidateAccountPresenterTests.swift in Sources */,
+				67B90F542650337C0015D4A2 /* CreateAccountImplTests.swift in Sources */,
+				67B90F4A265022430015D4A2 /* GetCurrentLocationServiceMock.swift in Sources */,
+				67B90F4F2650224D0015D4A2 /* GetCurrentDateServiceMock.swift in Sources */,
+				67B90F71265042F00015D4A2 /* ValidateAccountViewSpy.swift in Sources */,
+				67B90F63265039F90015D4A2 /* ValidateAccountMock.swift in Sources */,
+				67B90F5E265039EE0015D4A2 /* CreateAccountMock.swift in Sources */,
+				67B90F3126501FB80015D4A2 /* ValidateAccountImplTests.swift in Sources */,
+				67B90F42265022200015D4A2 /* AccountStorageMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		676791E4264F147500AA24E4 /* Sources */ = {
+		67C68A5726500A8A00134BBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676791ED264F147500AA24E4 /* Account_ValidatorUITests.swift in Sources */,
+				67C68A8126500B0E00134BBA /* KeychainStorage.swift in Sources */,
+				67C68A8626500BB200134BBA /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C68A5F26500A8A00134BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C68A6B26500A8A00134BBA /* Keychain_StorageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +726,20 @@
 			target = 676791C6264F146F00AA24E4 /* Account Validator */;
 			targetProxy = 676791DE264F147500AA24E4 /* PBXContainerItemProxy */;
 		};
-		676791EA264F147500AA24E4 /* PBXTargetDependency */ = {
+		67C68A6626500A8A00134BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C68A5A26500A8A00134BBA /* Keychain Storage */;
+			targetProxy = 67C68A6526500A8A00134BBA /* PBXContainerItemProxy */;
+		};
+		67C68A6826500A8A00134BBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 676791C6264F146F00AA24E4 /* Account Validator */;
-			targetProxy = 676791E9264F147500AA24E4 /* PBXContainerItemProxy */;
+			targetProxy = 67C68A6726500A8A00134BBA /* PBXContainerItemProxy */;
+		};
+		67C68A6F26500A8A00134BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C68A5A26500A8A00134BBA /* Keychain Storage */;
+			targetProxy = 67C68A6E26500A8A00134BBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +882,7 @@
 		676791F2264F147500AA24E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +901,7 @@
 		676791F3264F147500AA24E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,41 +959,98 @@
 			};
 			name = Release;
 		};
-		676791F8264F147500AA24E4 /* Debug */ = {
+		67C68A7326500A8A00134BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Account ValidatorUITests/Info.plist";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Keychain Storage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Account-ValidatorUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Keychain-Storage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Account Validator";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		676791F9264F147500AA24E4 /* Release */ = {
+		67C68A7426500A8A00134BBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Account ValidatorUITests/Info.plist";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Keychain Storage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Account-ValidatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Keychain-Storage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67C68A7726500A8A00134BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Keychain StorageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Keychain-StorageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Account Validator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Account Validator.app/Account Validator";
+			};
+			name = Debug;
+		};
+		67C68A7826500A8A00134BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Keychain StorageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appgate.Keychain-StorageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Account Validator.app/Account Validator";
 			};
 			name = Release;
 		};
@@ -577,11 +1084,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		676791F7264F147500AA24E4 /* Build configuration list for PBXNativeTarget "Account ValidatorUITests" */ = {
+		67C68A7226500A8A00134BBA /* Build configuration list for PBXNativeTarget "Keychain Storage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				676791F8264F147500AA24E4 /* Debug */,
-				676791F9264F147500AA24E4 /* Release */,
+				67C68A7326500A8A00134BBA /* Debug */,
+				67C68A7426500A8A00134BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C68A7626500A8A00134BBA /* Build configuration list for PBXNativeTarget "Keychain StorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C68A7726500A8A00134BBA /* Debug */,
+				67C68A7826500A8A00134BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
